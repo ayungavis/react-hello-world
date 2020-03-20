@@ -27,22 +27,25 @@ function App() {
 
   // each component must return HTML
   return (
-    <div className="App">
-      <Navbar></Navbar>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{renderHelloWorld()}</p>
-        <p>{renderCounter()}</p>
-        <HomePage title="Home page" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="App">
+        <Navbar></Navbar>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>{renderHelloWorld()}</p>
+          <p>{renderCounter()}</p>
+          <HomePage title="Home page" />
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div>
+      <div></div>
     </div>
   );
 }
